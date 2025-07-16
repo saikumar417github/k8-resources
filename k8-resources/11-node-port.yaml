@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   namespace: expense
-  name: nodeport.service
+  name: nodeport
 spec:
   type: NodePort
   selector:
