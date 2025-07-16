@@ -1,5 +1,5 @@
 apiVersion: apps/v1
-kind: RepicaSet
+kind: ReplicaSet
 metadata:
   namespace: expense
   name: rs1
