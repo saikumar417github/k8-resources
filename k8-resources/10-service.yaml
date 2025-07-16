@@ -5,7 +5,6 @@ metadata:
   name: nginx
 spec:
   selector:
-    matchLabels:
       environment: dev
       project: expense
   ports:
