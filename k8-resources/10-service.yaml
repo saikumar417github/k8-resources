@@ -1,0 +1,14 @@
+apiVersion: apps/v1
+kind: Service
+metadata:
+  namespace: expense
+  name: nginx
+spec:
+  selector:
+    matchLabels:
+      environment: dev
+      project: expense
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
