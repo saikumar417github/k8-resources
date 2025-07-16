@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Pod
 metadata:
-namespace: expense
-name: multi-nginx
-labels:
-  environment: dev
-  project: expense
+  namespace: expense
+  name: multi-nginx
+  labels:
+    environment: dev
+    project: expense
 spec:
   containers:
   - name: nginx
