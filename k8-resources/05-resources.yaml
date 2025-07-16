@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: resource
+  namespace: expense
+  labels:
+    project: expense
+    environment: dev
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+  resources:
+    requests:
+      cpu: 100m
+      memory: 68Mi
+    limits:
+      cpu: 120mi
+      memory: 120Mi
