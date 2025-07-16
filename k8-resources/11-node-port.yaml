@@ -10,4 +10,5 @@ spec:
     environment: dev
   ports:
     - port: 80
-      containerPort: 80
+      targetPort: 80
+      nodePort: 30007
