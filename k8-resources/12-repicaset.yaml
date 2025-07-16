@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: RepicaSet
+metadata:
+  namespace: expense
+  name: rs1
+  labels:
+    project: expense
+    environment: dev
+spec:
+  template:
+    metadata:
+     name: nginx
+     namespace: expense
+     labels:
+       project: expense
+       environment: dev
+    spec:
+      containers:
+      - name: nginx
+        image: nginx
+  replicas: 3
+  selector:
+    matchLabels:
+      project: expense
+      environment: dev
