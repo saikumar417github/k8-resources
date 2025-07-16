@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  mamespace: expense
+  namespace: expense
   name: nginx.config
   labels:
     project: expense
