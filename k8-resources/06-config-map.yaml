@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: nginxConfig
+  name: nginx.onfig
   labels:
     project: expense
     environment: dev
