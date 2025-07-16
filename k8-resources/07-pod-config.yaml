@@ -12,10 +12,12 @@ spec:
     image: nginx
     env:
     - name: course
-      configMapKeyRef:
-        name: nginx.config
-        key: course
+      valueFrom:
+        configMapKeyRef:
+          name: nginx.config
+          key: course
     - name: mode
-      configMapKeyRef:
-        name: nginx.config
-        key: mode
+      valueFrom:
+        configMapKeyRef:
+          name: nginx.config
+          key: mode
